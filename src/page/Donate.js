@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../components/Header'
 
 const Donate = () => {
-  return (
+return (
     <div>
         <Header/>
-        <form className="m-10 w-screen h-screen">
+        <form className="w-screen h-screen">
         <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">

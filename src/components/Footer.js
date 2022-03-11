@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
-  return (
-    <div className="text-center text-white bg-gray-200">
+return (
+    <div className="text-center text-white bg-gray-200 overflow-hidden">
         <div className="container pt-9 flex flex-col justify-between items-center md:flex-row lg:flex-row">
-            <h3 className="flex  items-center text-xl mb-9 text-gray-400">Connect with us on social media</h3>
-            <div className="flex justify-evenly items-center mb-9">
+            <h3 className="flex  items-center text-xl mb-9 text-gray-400 px-10">Connect with us on social media</h3>
+            <div className="flex justify-evenly items-center mb-9 px-10">
                 <Link to="#!" className="mr-9 text-gray-800">
                     <svg
                     aria-hidden="true"

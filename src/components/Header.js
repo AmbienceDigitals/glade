@@ -22,7 +22,7 @@ const Header = () => {
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
             </div>
-            <Popover.Group as="nav" className="hidden md:flex  space-x-20">
+            <Popover.Group as="nav" className="hidden md:flex  space-x-20 px-10">
             <Link to="/" className="text-base font-medium text-gray-700 hover:text-gray-900">
                 Home
             </Link>
