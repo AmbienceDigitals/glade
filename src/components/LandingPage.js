@@ -1,13 +1,12 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-
+import {Link} from 'react-router-dom'
 
 const navigation = [
-  { name: 'Mission Statement', href: '#' },
-  { name: 'Testimonials', href: '#' },
-  { name: 'Donate', href: '#' },
-  { name: 'Request Support', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Donate', href: '/donate' },
+  { name: 'Request Support', href: '/support' },
 ]
 
 const LandingPage = () => {
@@ -47,9 +46,9 @@ const LandingPage = () => {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                    <Link key={item.name} to={item.href} className="font-medium text-gray-500 hover:text-gray-900">
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
     
                 </div>
@@ -87,13 +86,13 @@ const LandingPage = () => {
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 
@@ -115,20 +114,20 @@ const LandingPage = () => {
               
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href="#"
+                  <Link
+                    to="/donate"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Donate
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
+                  <Link
+                    to="/support"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Request Support
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
