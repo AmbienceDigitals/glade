@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <div className="p-10">
+    <div className="m-10">
        <h1 className="text-center text-2xl py-3 md:text-3xl lg:text-3xl text-gray-500 font-medium">Testimonials </h1>
             <div className="flex flex-wrap justify-around">
                 <div className="w-full my-3 md:w-2/5 lg:w-1/3 text-gray-500 px-16 py-5 rounded-lg">
