@@ -5,7 +5,7 @@ import Testimonials from '../components/Testimonials'
 
 const Homepage = () => {
   return (
-    <div className="w-full">
+    <div className="w-screen">
         <LandingPage/>
         <Mission/>
         <Testimonials/>
