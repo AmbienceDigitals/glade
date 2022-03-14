@@ -14,8 +14,6 @@ function App() {
           <Route path='/donate'  element={<Donate/>}></Route>
           <Route path='/support'  element={<Support/>}></Route>
         </Routes>
-        <Footer
-        className=" overflow-x-hidden"/>
       </Router>
     </div>
   );

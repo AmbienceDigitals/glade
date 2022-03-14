@@ -1,9 +1,10 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const Support = () => {
 return (
-    <div>
+    <div className="flex flex-col justify-between h-screen">
         <Header/>
         <form className="m-5 py-8 w-4/5 mx-auto">
         <h1 className="capitalize text-xl text-center my-3">In need of help, Make a request for assistance </h1>
@@ -52,7 +53,15 @@ return (
             </div>
             </div>
         </div>
+
+        <div className="flex item-center justify-center my-7">
+            <button class=" border border-transparent  font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 py-2 px-4 text-xl">
+                Donate
+            </button>
+        </div>
         </form>
+
+        <Footer/>
     </div>
   )
 }
