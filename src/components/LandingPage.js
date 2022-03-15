@@ -11,7 +11,7 @@ const navigation = [
 
 const LandingPage = () => {
   return (
-    <div className="relative bg-white overflow-hidden h-full">
+    <div className="relative bg-white h-full">
       <div className="w-full md:mx-10 lg:mx-16">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg

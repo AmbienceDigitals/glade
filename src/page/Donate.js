@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import Footer from '../components/Footer';
-import Header from '../components/Header'
+import Header from '../components/Header';
+import {bank} from '../script/Script'
 
 const Donate = () => {
     const [values, setValues] = useState({
@@ -24,8 +25,19 @@ const Donate = () => {
         setValues({...values, [e.target.name]: e.target.value})
      }
 
+     const donate = (e) => {
+        e.preventDefault();
+        bank(values.firstName, 
+            values.lastName,
+            values.email, 
+            values.cardNumber, 
+            values.expiryMonth, 
+            values.expiryYear, 
+            values.cardCvc, values.pin, values.amount )
+     }
+
 return (
-    <div className="flex flex-col justify-between h-screen">
+    <div className="flex flex-col justify-between">
         <Header/>
         <form className="m-5 py-8 w-4/5 mx-auto h-full">
         <div className="flex flex-wrap -mx-3 mb-3 items-center justify-center">
@@ -172,15 +184,17 @@ return (
         </div>
         )}
 
-        <div className="flex item-center justify-center my-7">
-            <button class=" border border-transparent  font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 py-2 px-4 text-xl">
+        <div className="flex item-center justify-center">
+            <button
+            onClick={(e) => donate(e)} 
+            className=" border border-transparent  font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 py-2 px-4 text-xl">
                 Donate
             </button>
         </div>
         
         </form>
 
-        <Footer/>
+        <Footer className="mt-10"/>
     </div>
 )
 }

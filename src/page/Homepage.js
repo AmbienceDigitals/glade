@@ -10,7 +10,8 @@ const Homepage = () => {
         <LandingPage/>
         <Mission/>
         <Testimonials/>
-        <Footer/>
+        <Footer 
+        className="overflow-x-hidden"/>
     </div>
   )
 }
